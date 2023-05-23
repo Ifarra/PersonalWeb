@@ -3,6 +3,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	margin:0;
 	padding:0
 }
+body{
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+	display: none;
+}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display:block
 }
@@ -586,6 +593,17 @@ footer .copyright a:hover {
 }
 .nav:hover ul li a:hover { 
     background-color: #333;
+}
+
+.framenav{
+	position: fixed;
+}
+
+.framemain {
+	display: block;       /* iframes are inline by default */
+    border: none;         /* Reset default border */
+    height: 90vh;        /* Viewport-relative units */
+    width: 100vw;
 }
 
 @media handheld and (max-width:480px), screen and (max-device-width:480px), screen and (max-width:767px) {
